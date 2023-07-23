@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Hungry Dog</title>
+</head>
+<body>
+    <main>
+        <div class="start">
+            <img src="images/dog.png" alt="">
+            <h1>Bienvenue sur Hungry Dog</h1>
+            <div class="history">
+                <h2>
+                    l'histoire d'un chien affamé !!
+                </h2>  <br>
+               <h3>
+                    Mais attention tout n'est pas bon pour lui !
+                </h3>
+                <div class="point">
+                    <div class="good">
+                        <span>
+                            <img src="images/ball.png" alt=""> +10
+                        </span>
+                        <span>
+                            <img src="images/bird.png" alt=""> +20
+                        </span>
+                        <span>
+                            <img src="images/os.png" alt=""> +30
+
+                        </span>
+                   
+                    </div>
+                    <div class="bad">
+                        <span>
+                            <img src="images/fly.png" alt=""> - 20
+                        </span>
+                        <span>
+                            <img src="images/snack.png" alt=""> -50
+                        </span>
+                        <span>
+                            <img src="images/choc.png" alt=""> -80
+                        </span>
+                    </div>
+                </div>
+                <h4>le but est de faire le plus gros score possible sans mourrir</h4>
+            </div>
+            <button id="go" onclick="go()">start</button>
+        </div>
+
+        <div class="game">
+
+            <div class="road1">
+                <img src="images/ciel.png" alt="" class="cloud">
+                <img src="images/bird.png" alt="" class="bird">
+                <img src="images/fly.png" alt="" class="fly">
+                <div class="hero1">
+                    <img src="images/dog.png" alt="">
+                    <img src="images/flydog.png" alt="" class="dog">
+                </div>
+            </div>
+
+            <div class="road2">
+                <img src="images/herb2.png" alt="">
+                <img src="images/herbefonf.png" alt="" class="fond">
+                <img src="images/ball.png" alt="" class="ball">
+                <img src="images/choc.png" alt="" class="choc">
+                <div class="hero2">
+                    <img src="images/dog.png" alt="">
+                    <img src="images/dog2.png" alt="" class="dog">
+                </div>
+            </div>
+            
+            <div class="road3">
+                <img src="images/roc1.png" alt="" class="roc">
+                <img src="images/roc2.png" alt="" class="roc2">
+                <img src="images/os.png" alt="" class="os">
+                <img src="images/snack.png" alt="" class="snack">
+                <div class="hero3">
+                    <img src="images/dog.png" alt="">
+                    <img src="images/dog2.png" alt="" class="dog">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="life">
+                    <span id="life">life : </span>
+                </div>
+                <button onclick="fly()">Fly</button>
+                <button onclick="run()">Run</button>
+                <button onclick="dig()">Dig</button>
+                <div class="result">
+                    <span id="score">score :</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="dead">
+            <h2>Mort !</h2>
+            <button id="restart" onclick="recharge()">Restart</button>
+        </div>
+    </main>
+ 
+</body>
+</html>

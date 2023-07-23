@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start {
+  background: linear-gradient(blue 5%, green 85%, brown 10%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.start img {
+  width: 20%;
+}
+.start button {
+  font-size: 20px;
+  margin: 20px;
+}
+.start .history {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.start .history .point {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.start .history .point .good, .start .history .point .bad {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.start .history .point .good span, .start .history .point .bad span {
+  margin: 15px 0px;
+}
+.start .history .point .good img, .start .history .point .bad img {
+  width: 20%;
+}
+.start .history .point .bad img {
+  width: 20%;
+}
+
+.game {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.road1 {
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(blue, white);
+  display: flex;
+}
+.road1 .cloud {
+  height: 200px;
+  animation: fond 3s infinite;
+}
+.road1 .bird {
+  height: 100px;
+  animation: fond 7s infinite;
+}
+.road1 .fly {
+  height: 150px;
+  animation: fond 2s infinite 3s;
+}
+.road1 .hero1 {
+  height: 150px;
+  width: 150px;
+  transform: rotate(50deg);
+  position: absolute;
+  margin: 0 15px;
+}
+.road1 .hero1 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+@keyframes fond {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: -100%;
+  }
+}
+.road2 {
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(white 10%, green 30%);
+  display: flex;
+}
+.road2 img {
+  width: 100%;
+  height: 100%;
+}
+.road2 .ball {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  animation: ball 3s infinite;
+}
+.road2 .choc {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  transform: translateY(300%);
+  animation: fond 5s infinite;
+}
+.road2 .hero2 {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  bottom: 39vh;
+  margin: 10px;
+}
+.road2 .hero2 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.road2 .fond {
+  position: absolute;
+  bottom: 41vh;
+  height: 50px;
+  width: auto;
+  animation: fond 4s infinite;
+}
+
+@keyframes ball {
+  0% {
+    transform: translateY(0px) rotate(0);
+    margin-left: 100%;
+  }
+  50% {
+    transform: translateY(180px) rotate(360deg);
+    margin-left: 50%;
+  }
+  100% {
+    transform: translateY(0px) rotate(0);
+    margin-left: -100%;
+  }
+}
+.road3 {
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(green 10%, brown 20%);
+  display: flex;
+}
+.road3 .roc, .road3 .roc2 {
+  animation: fond 5s infinite;
+  position: absolute;
+  height: 50px;
+}
+.road3 .roc2 {
+  animation: fond 3s infinite;
+  transform: translateY(200px);
+}
+.road3 .os {
+  height: 50px;
+  position: absolute;
+  transform: translateY(100px);
+  animation: fond 4s infinite;
+}
+.road3 .snack {
+  height: 50px;
+  transform: translateY(120px);
+  animation: fond 6s infinite;
+}
+.road3 .hero3 {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  transform: rotate(90deg);
+}
+.road3 .hero3 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 15px;
+}
+
+@keyframes dogs {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.dog {
+  animation: dogs infinite 0.3s;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  background: green;
+}
+.container button {
+  margin: 15px;
+  width: 50px;
+  height: 50px;
+}
+
+.dead {
+  width: 100%;
+  height: 100%;
+  background: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.dead button {
+  padding: 15px;
+}/*# sourceMappingURL=style.css.map */
